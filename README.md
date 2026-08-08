@@ -1,16 +1,16 @@
 # arduino-lab
 
-Sammlung kleiner Arduino-Projekte, gebaut auf dem ELEGOO Mega R3 Ultimate Starter Kit (Arduino Mega 2560) neben der Ausbildung zum Fachinformatiker Systemintegration.
+Small Arduino projects, built on the ELEGOO Mega R3 Ultimate Starter Kit (Arduino Mega 2560) alongside my apprenticeship as a Fachinformatiker Systemintegration (IT specialist).
 
-## Projekte
+## Projects
 
-- [`LEDswitch/`](./LEDswitch) --- ein Taster schaltet zwischen zwei LEDs um
-- [`Anki_Controller_Projekt/`](./Anki_Controller_Projekt) --- vier Taster mit LCD1602-Anzeige und Zähler, Vorstufe zu einem Anki-Answer-Clicker
+- [`LEDswitch/`](./LEDswitch) --- one button toggles between two LEDs
+- [`Anki_Controller_Projekt/`](./Anki_Controller_Projekt) --- four buttons with LCD1602 display and counter, a first step toward an Anki answer clicker
 
-## Struktur
+## Structure
 
-Jedes Projekt hat einen eigenen Ordner mit `.ino`-Sketch, eigenem `README.md` und einem Schaltplan-/Fotoordner.
+Each project has its own folder with an `.ino` sketch, its own `README.md`, and a schematic/photo folder.
 
 ## Tools
 
-- Arduino IDE, Board: Arduino Mega or Mega 2560
+- Arduino IDE, board: Arduino Mega or Mega 2560

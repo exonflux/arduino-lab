@@ -1,18 +1,18 @@
-# Anki Controller Projekt
+# Anki Controller Project
 
-Vier Taster lösen auf einer RGB-LED jeweils einen kurzen Farbblitz (200 ms) aus, jeder Taster hat eine fest zugeordnete Farbe. Zusätzlich zeigt ein LCD1602-Display an, welche Anki-Bewertung zuletzt gedrückt wurde, und zählt in der zweiten Zeile mit, wie oft insgesamt gedrückt wurde. Vorstufe zu einem geplanten physischen Anki-Antwort-Controller.
+Four buttons trigger a short color flash (200 ms) on an RGB LED, each button has a fixed color. An LCD1602 display shows which Anki rating was last pressed, and counts total presses on the second line. A first step toward a physical Anki answer controller.
 
 **Pins:**
 
-| Bauteil | Pin |
+| Component | Pin |
 |---|---|
-| Taster 1 (Perfekt / Hellblau) | 9 |
-| Taster 2 (Gut / Grün) | 10 |
-| Taster 3 (Hart / Gelb) | 11 |
-| Taster 4 (Again / Rot) | 12 |
-| RGB Rot | 2 |
-| RGB Grün | 3 |
-| RGB Blau | 4 |
+| Button 1 (Perfect / Light blue) | 9 |
+| Button 2 (Good / Green) | 10 |
+| Button 3 (Hard / Yellow) | 11 |
+| Button 4 (Again / Red) | 12 |
+| RGB Red | 2 |
+| RGB Green | 3 |
+| RGB Blue | 4 |
 | LCD RS | 22 |
 | LCD E | 23 |
 | LCD D4 | 24 |
@@ -20,13 +20,13 @@ Vier Taster lösen auf einer RGB-LED jeweils einen kurzen Farbblitz (200 ms) aus
 | LCD D6 | 26 |
 | LCD D7 | 27 |
 
-Jeder Tastendruck löst per Edge-Detection genau **einen** Blitz aus, kein Dauerleuchten beim Halten. Ein kurzes `delay(20)` am Ende von `loop()` fängt das Kontaktprellen beim Loslassen ab, sonst zündet der Blitz manchmal doppelt.
+Each press triggers exactly **one** flash via edge detection, no continuous light while held. A short `delay(20)` at the end of `loop()` catches contact bounce on release, otherwise the flash sometimes fires twice.
 
-Das LCD1602 läuft im 4-Bit-Modus (D0-D3 unbenutzt), Kontrast über ein Potentiometer an V0 (Festkontrast an GND wäre nur aus einem schmalen Blickwinkel lesbar). Zeile 1 zeigt die zuletzt gedrückte Bewertung, Zeile 2 einen Zähler für die Gesamtzahl der Drücke.
+The LCD1602 runs in 4-bit mode (D0-D3 unused), contrast set via a potentiometer on V0 (a fixed contrast tied to GND would only be readable from an angle). Row 1 shows the last pressed rating, row 2 a counter of total presses.
 
-**Nächster Schritt:** Ausbau zum echten Anki-Answer-Clicker, der MEGA hat kein natives USB-HID, dafür braucht's eine Python-Bridge zu AnkiConnect.
+**Next step:** turn this into a real Anki answer clicker. The Mega has no native USB HID, so it'll need a Python bridge to AnkiConnect.
 
-![Aufbau](Schaltplan/Aufbau.jpg)
+![Setup](Schaltplan/Aufbau.jpg)
 
 ## Demo
 

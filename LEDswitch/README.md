@@ -1,8 +1,8 @@
 # LED Switch
 
-Taster schaltet zwischen zwei LEDs um, Pin 13 ist der Taster, Pin 2 (LED1), Pin 6 (LED2).
+A button toggles between two LEDs. Pin 13 is the button, pin 2 (LED1), pin 6 (LED2).
 
-Jeder Druck togglet, welche LED an ist!
-Es ist immer mindestens eine an.
+Each press toggles which LED is on.
+At least one is always on.
 
-![Schaltplan](schaltplan/LEDswitch%20Plan.png)
+![Schematic](schaltplan/LEDswitch%20Plan.png)
