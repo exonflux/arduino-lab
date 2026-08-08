@@ -40,7 +40,7 @@ bool current4 = digitalRead(BUTTON4);
 
 if (current1 == LOW && lastState[0] == true){
   lcd.setCursor(1, 0);
-  lcd.print("PERFEKT     ");
+  lcd.print("Perfect  :) ");
   analogWrite(RED, 0);
   analogWrite(GREEN, 120);
   analogWrite(BLUE, 105);
@@ -54,7 +54,7 @@ if (current1 == LOW && lastState[0] == true){
 
 if (current2 == LOW && lastState[1] == true){
    lcd.setCursor(1, 0);
-  lcd.print("GUT        ");
+  lcd.print("Good   :>    ");
   analogWrite(RED, 0);
   analogWrite(GREEN, 255);
   analogWrite(BLUE, 0);
@@ -68,7 +68,7 @@ if (current2 == LOW && lastState[1] == true){
 
 if (current3 == LOW && lastState[2] == true){
    lcd.setCursor(1, 0);
-  lcd.print("HART        ");
+  lcd.print("Hard     :|   ");
   analogWrite(RED, 200);
   analogWrite(GREEN, 100);
   analogWrite(BLUE, 0);
@@ -82,7 +82,7 @@ if (current3 == LOW && lastState[2] == true){
 
 if (current4 == LOW && lastState[3] == true){
    lcd.setCursor(1, 0);
-  lcd.print("AGAIN        ");
+  lcd.print("AGAIN :(        ");
   analogWrite(RED, 255);
   analogWrite(GREEN, 0);
   analogWrite(BLUE, 0);
