@@ -7,6 +7,7 @@ Small Arduino projects, built on the ELEGOO Mega R3 Ultimate Starter Kit (Arduin
 - [`LEDswitch/`](./LEDswitch) --- one button toggles between two LEDs
 - [`Anki_Controller_Projekt/`](./Anki_Controller_Projekt) --- four buttons with LCD1602 display and counter, a first step toward an Anki answer clicker
 - [`Traffic light/`](./Traffic%20light) --- a button triggers a full green-yellow-red-red+yellow-green traffic light sequence
+- [`1To5/`](./1To5) --- Knight Rider style LED chase, five LEDs sweeping left to right and back using an array and two for loops
 
 ## Structure
 
